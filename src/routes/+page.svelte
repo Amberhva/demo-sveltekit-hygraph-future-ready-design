@@ -2,11 +2,15 @@
     export let data;
     import { onMount } from "svelte";
 
-    import Hero from "../lib/components/Hero.svelte";
+    // Importeer de componenten uit het componenten map
+    import Header from "../lib/components/Header.svelte";
+    import SamenImpactMaken from "../lib/components/SamenImpactMaken.svelte";
+    import GerichtOpLangdurigSucces from "../lib/components/GerichtOpLangdurigSucces.svelte"
 
     onMount(() => {});
 </script>
 
 <!-- Voeg de componenten toe -->
-<Hero {data}/>
-
+<Header {data}/>
+<SamenImpactMaken {data} />
+<GerichtOpLangdurigSucces {data}/>
